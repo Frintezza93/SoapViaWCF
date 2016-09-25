@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96FA5603-F4B5-4B96-822E-604BDA497AFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestProj</RootNamespace>
+    <AssemblyName>TestProj</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intuit.Ipp.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Data, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.DataService, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.DataService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Diagnostics, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Diagnostics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Exception, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Exception.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.GlobalTaxService, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.GlobalTaxService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.LinqExtender, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.LinqExtender.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.PlatformService, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.PlatformService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.QueryFilter, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.QueryFilter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.ReportService, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.ReportService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Retry, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Retry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Security, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intuit.Ipp.Utility, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IppDotNetSdkForQuickBooksApiV3.2.4.0\lib\Intuit.Ipp.Utility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CalculatorReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\CalculatorReference\TestProj.CalculatorReference.ComplexNumber.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CalculatorReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculatorReference\Calculator1.wsdl" />
+    <None Include="Service References\CalculatorReference\Calculator2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculatorReference\Calculator21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculatorReference\Calculator22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculatorReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculatorReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculatorReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
